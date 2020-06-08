@@ -1,0 +1,8 @@
+/content/documents/myproject-bar:
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:referenceable']
+  jcr:uuid: 8e2070b8-b855-478c-bbf6-1e2812a2cdd5
+  hippo:name: My Project Bar
+  hippostd:foldertype: [new-translated-folder, new-document]
+  hippotranslation:id: 881cbdc7-98f1-4ee8-8fff-133156809350
+  hippotranslation:locale: en

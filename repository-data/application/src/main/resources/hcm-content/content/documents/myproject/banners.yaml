@@ -7,23 +7,80 @@
   hippotranslation:locale: en
   /banner1:
     jcr:primaryType: hippo:handle
-    jcr:mixinTypes: ['mix:referenceable']
+    jcr:mixinTypes: ['hippo:versionInfo', 'mix:referenceable']
     jcr:uuid: 895fb1b6-410d-4972-9894-6b6a06d2b361
-    /banner1:
+    hippo:versionHistory: 8bfca41f-46a4-45ed-802e-94fd249d0212
+    /banner1[1]:
       jcr:primaryType: myproject:bannerdocument
       jcr:mixinTypes: ['mix:referenceable']
       jcr:uuid: 7e08b3e0-dd2e-4722-8441-1ef49179597b
-      hippo:availability: [live, preview]
+      hippo:availability: [live]
       hippostd:holder: admin
       hippostd:state: published
       hippostdpubwf:createdBy: admin
       hippostdpubwf:creationDate: 2014-03-20T17:00:00+01:00
-      hippostdpubwf:lastModificationDate: 2014-03-20T17:04:00+01:00
+      hippostdpubwf:lastModificationDate: 2020-06-08T15:34:53.379+02:00
       hippostdpubwf:lastModifiedBy: admin
-      hippostdpubwf:publicationDate: 2014-03-20T17:04:00+01:00
+      hippostdpubwf:publicationDate: 2020-06-08T15:34:57.589+02:00
       hippotranslation:id: ed0d8fa1-87c7-43b6-9e48-e0f71af2a3b0
       hippotranslation:locale: en
-      myproject:title: Sample banner
+      myproject:title: Sample banner No foo nor Bar
+      /myproject:content:
+        jcr:primaryType: hippostd:html
+        hippostd:content: <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat.</p>
+      /myproject:image:
+        jcr:primaryType: hippogallerypicker:imagelink
+        hippo:docbase: 9e440e6d-e93a-4d5f-913b-9c3b0867c812
+        hippo:facets: []
+        hippo:modes: []
+        hippo:values: []
+      /myproject:link:
+        jcr:primaryType: hippo:mirror
+        hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+    /banner1[2]:
+      jcr:primaryType: myproject:bannerdocument
+      jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+      jcr:uuid: 063b044a-98de-4747-b689-c421c6ed7dfb
+      hippo:availability: [preview]
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2014-03-20T17:00:00+01:00
+      hippostdpubwf:lastModificationDate: 2020-06-08T15:34:53.379+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: ed0d8fa1-87c7-43b6-9e48-e0f71af2a3b0
+      hippotranslation:locale: en
+      myproject:title: Sample banner No foo nor Bar
+      /myproject:content:
+        jcr:primaryType: hippostd:html
+        hippostd:content: <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat.</p>
+      /myproject:image:
+        jcr:primaryType: hippogallerypicker:imagelink
+        hippo:docbase: 9e440e6d-e93a-4d5f-913b-9c3b0867c812
+        hippo:facets: []
+        hippo:modes: []
+        hippo:values: []
+      /myproject:link:
+        jcr:primaryType: hippo:mirror
+        hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+    /banner1[3]:
+      jcr:primaryType: myproject:bannerdocument
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 82c468c6-68e2-4847-a8f1-5c0f9bac7a15
+      hippo:availability: []
+      hippostd:state: draft
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2014-03-20T17:00:00+01:00
+      hippostdpubwf:lastModificationDate: 2020-06-08T15:34:57.719+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: ed0d8fa1-87c7-43b6-9e48-e0f71af2a3b0
+      hippotranslation:locale: en
+      myproject:title: Sample banner No foo nor Bar
       /myproject:content:
         jcr:primaryType: hippostd:html
         hippostd:content: <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,

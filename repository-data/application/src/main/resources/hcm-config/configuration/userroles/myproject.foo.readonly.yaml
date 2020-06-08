@@ -1,0 +1,8 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:userroles/myproject.foo.readonly:
+      jcr:primaryType: hipposys:userrole
+      hipposys:description: Readonly access to content and channel of myproject foo
+      hipposys:system: true
+      hipposys:userroles: [xm.cms.user, xm.dashboard.user, xm.content.user, xm.channel.user,
+        xm.webfiles.reader, administration.readonly]

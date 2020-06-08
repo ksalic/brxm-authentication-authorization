@@ -1,0 +1,7 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:userroles/myproject.foo.author:
+      jcr:primaryType: hipposys:userrole
+      hipposys:description: Author access to myproject foo
+      hipposys:system: true
+      hipposys:userroles: [myproject.foo.readonly]

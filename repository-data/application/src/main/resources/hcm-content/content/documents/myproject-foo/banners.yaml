@@ -1,0 +1,190 @@
+/content/documents/myproject-foo/banners:
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['hippotranslation:translated', 'mix:referenceable']
+  jcr:uuid: 9c906a1b-ae3b-4a76-bd1e-42e5a9f91111
+  hippostd:foldertype: [new-banner-document, new-banner-folder]
+  hippotranslation:id: 67aa7ed0-4672-4bcc-9dba-c5bf7a93e063
+  hippotranslation:locale: en
+  /banner1:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:versionInfo', 'mix:referenceable']
+    jcr:uuid: 8c4befde-e746-4a1c-9bee-997b79964911
+    hippo:versionHistory: cdf88410-7bab-4f43-9608-52d0072618af
+    /banner1[1]:
+      jcr:primaryType: myproject:bannerdocument
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 835c1cda-4d74-4bfc-9efc-7e54483ba7c9
+      hippo:availability: [live]
+      hippostd:holder: admin
+      hippostd:state: published
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2014-03-20T17:00:00+01:00
+      hippostdpubwf:lastModificationDate: 2020-06-08T15:59:37.785+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippostdpubwf:publicationDate: 2020-06-08T15:59:39.589+02:00
+      hippotranslation:id: e571770d-c747-41c2-996d-2744ebc91d9e
+      hippotranslation:locale: en
+      myproject:title: Sample banner
+      /myproject:content:
+        jcr:primaryType: hippostd:html
+        hippostd:content: <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat.</p>
+      /myproject:image:
+        jcr:primaryType: hippogallerypicker:imagelink
+        hippo:docbase: 6bda60a4-dd05-47c7-9304-1992ebaca515
+        hippo:facets: []
+        hippo:modes: []
+        hippo:values: []
+      /myproject:link:
+        jcr:primaryType: hippo:mirror
+        hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+    /banner1[2]:
+      jcr:primaryType: myproject:bannerdocument
+      jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+      jcr:uuid: f2bb3240-b2b8-4862-a03a-62678ccfce0c
+      hippo:availability: [preview]
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2014-03-20T17:00:00+01:00
+      hippostdpubwf:lastModificationDate: 2020-06-08T15:59:37.785+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: e571770d-c747-41c2-996d-2744ebc91d9e
+      hippotranslation:locale: en
+      myproject:title: Sample banner
+      /myproject:content:
+        jcr:primaryType: hippostd:html
+        hippostd:content: <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat.</p>
+      /myproject:image:
+        jcr:primaryType: hippogallerypicker:imagelink
+        hippo:docbase: 6bda60a4-dd05-47c7-9304-1992ebaca515
+        hippo:facets: []
+        hippo:modes: []
+        hippo:values: []
+      /myproject:link:
+        jcr:primaryType: hippo:mirror
+        hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+    /banner1[3]:
+      jcr:primaryType: myproject:bannerdocument
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 7e753e95-756c-41f2-87d0-079ea67fe566
+      hippo:availability: []
+      hippostd:state: draft
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2014-03-20T17:00:00+01:00
+      hippostdpubwf:lastModificationDate: 2020-06-08T15:58:47.672+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: e571770d-c747-41c2-996d-2744ebc91d9e
+      hippotranslation:locale: en
+      myproject:title: Sample banner
+      /myproject:content:
+        jcr:primaryType: hippostd:html
+        hippostd:content: <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat.</p>
+      /myproject:image:
+        jcr:primaryType: hippogallerypicker:imagelink
+        hippo:docbase: 6bda60a4-dd05-47c7-9304-1992ebaca515
+        hippo:facets: []
+        hippo:modes: []
+        hippo:values: []
+      /myproject:link:
+        jcr:primaryType: hippo:mirror
+        hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+  /banner2:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+    jcr:uuid: 5bb5601f-e260-4c5e-afdd-968901b4eacf
+    hippo:name: banner2
+    hippo:versionHistory: 15f8d905-220c-4e9d-8a16-0d8e9c334ae7
+    /banner2[1]:
+      jcr:primaryType: myproject:bannerdocument
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 9f5e7405-d1b7-43ce-92d9-02f08191558e
+      hippo:availability: [live]
+      hippostd:holder: admin
+      hippostd:state: published
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2014-03-20T17:00:00+01:00
+      hippostdpubwf:lastModificationDate: 2020-06-08T15:59:32.225+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippostdpubwf:publicationDate: 2020-06-08T15:59:34.154+02:00
+      hippotranslation:id: 9ca7c18c-e5de-424c-8c7c-0dfaf0415467
+      hippotranslation:locale: en
+      myproject:title: Sample banner 2
+      /myproject:content:
+        jcr:primaryType: hippostd:html
+        hippostd:content: <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat.</p>
+      /myproject:image:
+        jcr:primaryType: hippogallerypicker:imagelink
+        hippo:docbase: 39e82275-7301-4b20-9bfe-2a46deb3ee0e
+        hippo:facets: []
+        hippo:modes: []
+        hippo:values: []
+      /myproject:link:
+        jcr:primaryType: hippo:mirror
+        hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+    /banner2[2]:
+      jcr:primaryType: myproject:bannerdocument
+      jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+      jcr:uuid: 2c65d587-a470-482a-a654-45ec9712522c
+      hippo:availability: [preview]
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2014-03-20T17:00:00+01:00
+      hippostdpubwf:lastModificationDate: 2020-06-08T15:59:32.225+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: 9ca7c18c-e5de-424c-8c7c-0dfaf0415467
+      hippotranslation:locale: en
+      myproject:title: Sample banner 2
+      /myproject:content:
+        jcr:primaryType: hippostd:html
+        hippostd:content: <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat.</p>
+      /myproject:image:
+        jcr:primaryType: hippogallerypicker:imagelink
+        hippo:docbase: 39e82275-7301-4b20-9bfe-2a46deb3ee0e
+        hippo:facets: []
+        hippo:modes: []
+        hippo:values: []
+      /myproject:link:
+        jcr:primaryType: hippo:mirror
+        hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+    /banner2[3]:
+      jcr:primaryType: myproject:bannerdocument
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 773da179-8370-41c0-ad9a-257da4029c9b
+      hippo:availability: []
+      hippostd:state: draft
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2014-03-20T17:00:00+01:00
+      hippostdpubwf:lastModificationDate: 2020-06-08T15:59:25.263+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: 9ca7c18c-e5de-424c-8c7c-0dfaf0415467
+      hippotranslation:locale: en
+      myproject:title: Sample banner 2
+      /myproject:content:
+        jcr:primaryType: hippostd:html
+        hippostd:content: <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat.</p>
+      /myproject:image:
+        jcr:primaryType: hippogallerypicker:imagelink
+        hippo:docbase: 39e82275-7301-4b20-9bfe-2a46deb3ee0e
+        hippo:facets: []
+        hippo:modes: []
+        hippo:values: []
+      /myproject:link:
+        jcr:primaryType: hippo:mirror
+        hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe

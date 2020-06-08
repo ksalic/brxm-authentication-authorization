@@ -1,0 +1,8 @@
+/content/gallery/myproject-foo:
+  .meta:order-before: myproject-bar
+  jcr:primaryType: hippogallery:stdImageGallery
+  jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+  jcr:uuid: 73762cdf-80ff-4d68-ac2a-d692d2887586
+  hippo:name: My Project Foo
+  hippostd:foldertype: [new-image-folder]
+  hippostd:gallerytype: ['hippogallery:imageset']

@@ -1,0 +1,60 @@
+/content/gallery/myproject-bar/banners:
+  jcr:primaryType: hippogallery:stdImageGallery
+  jcr:mixinTypes: ['mix:referenceable']
+  jcr:uuid: dc51ebbf-9d3b-48cb-8f42-87d46da31a6e
+  hippostd:foldertype: [new-image-folder]
+  hippostd:gallerytype: ['hippogallery:imageset']
+  /banner-1.jpg:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: eaec0a7f-d5d8-4c8b-9174-cd2772e8f9de
+    /banner-1.jpg:
+      jcr:primaryType: hippogallery:imageset
+      hippo:availability: [live, preview]
+      hippogallery:filename: banner-1.jpg
+      /hippogallery:thumbnail:
+        jcr:primaryType: hippogallery:image
+        hippo:filename: banner-1.jpg
+        hippogallery:height: 12
+        hippogallery:width: 60
+        jcr:data:
+          type: binary
+          resource: /content/gallery/myproject-bar/banners/banner-1.jpg/banner-1_thumbnail.jpg
+        jcr:lastModified: 2016-07-25T09:42:50.174+02:00
+        jcr:mimeType: image/jpeg
+      /hippogallery:original:
+        jcr:primaryType: hippogallery:image
+        hippogallery:height: 250
+        hippogallery:width: 1170
+        jcr:data:
+          type: binary
+          resource: /content/gallery/myproject-bar/banners/banner-1.jpg/banner-1_original.jpg
+        jcr:lastModified: 2016-07-25T09:42:50.174+02:00
+        jcr:mimeType: image/jpeg
+  /banner-2.jpg:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: 333d8eed-f2cc-4a9e-af2a-f4cd4554fbcc
+    /banner-2.jpg:
+      jcr:primaryType: hippogallery:imageset
+      hippo:availability: [live, preview]
+      hippogallery:filename: banner-2.jpg
+      /hippogallery:thumbnail:
+        jcr:primaryType: hippogallery:image
+        hippo:filename: banner-2.jpg
+        hippogallery:height: 12
+        hippogallery:width: 60
+        jcr:data:
+          type: binary
+          resource: /content/gallery/myproject-bar/banners/banner-2.jpg/banner-2_thumbnail.jpg
+        jcr:lastModified: 2016-07-25T09:42:50.558+02:00
+        jcr:mimeType: image/jpeg
+      /hippogallery:original:
+        jcr:primaryType: hippogallery:image
+        hippogallery:height: 250
+        hippogallery:width: 1170
+        jcr:data:
+          type: binary
+          resource: /content/gallery/myproject-bar/banners/banner-2.jpg/banner-2_original.jpg
+        jcr:lastModified: 2016-07-25T09:42:50.558+02:00
+        jcr:mimeType: image/jpeg

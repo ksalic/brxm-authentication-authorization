@@ -1,0 +1,60 @@
+definitions:
+  config:
+    /hst:hst/hst:domains/hstconfig-bar:
+      jcr:primaryType: hipposys:domain
+      /hstconfig:
+        jcr:primaryType: hipposys:domainrule
+        /hstconfig-and-descendants:
+          jcr:primaryType: hipposys:facetrule
+          hipposys:equals: true
+          hipposys:facet: jcr:path
+          hipposys:type: Reference
+          hipposys:value: /
+        /exclude-hst-domains-and-descendants:
+          jcr:primaryType: hipposys:facetrule
+          hipposys:equals: false
+          hipposys:facet: jcr:path
+          hipposys:type: Reference
+          hipposys:value: /hst:domains
+        /exclude-default:
+          jcr:primaryType: hipposys:facetrule
+          hipposys:equals: false
+          hipposys:facet: jcr:path
+          hipposys:type: Reference
+          hipposys:value: /hst:configurations/myproject
+        /exclude-default-preview:
+          jcr:primaryType: hipposys:facetrule
+          hipposys:equals: false
+          hipposys:facet: jcr:path
+          hipposys:type: Reference
+          hipposys:value: /hst:configurations/myproject-preview
+        /exclude-foo:
+          jcr:primaryType: hipposys:facetrule
+          hipposys:equals: false
+          hipposys:facet: jcr:path
+          hipposys:type: Reference
+          hipposys:value: /hst:configurations/myproject-foo
+        /exclude-foo-preview:
+          jcr:primaryType: hipposys:facetrule
+          hipposys:equals: false
+          hipposys:facet: jcr:path
+          hipposys:type: Reference
+          hipposys:value: /hst:configurations/myproject-foo-preview
+      /channel-bar-admin:
+        jcr:primaryType: hipposys:authrole
+        hipposys:groups: []
+        hipposys:role: channel-admin
+        hipposys:userrole: myproject.bar.admin
+        hipposys:users: []
+      /channel-bar-webmaster:
+        jcr:primaryType: hipposys:authrole
+        hipposys:groups: []
+        hipposys:role: channel-webmaster
+        hipposys:userrole: myproject.bar.editor
+        hipposys:users: []
+      /channel-bar-viewer:
+        jcr:primaryType: hipposys:authrole
+        hipposys:groups: []
+        hipposys:role: channel-viewer
+        hipposys:userrole: myproject.bar.readonly
+        hipposys:users: []

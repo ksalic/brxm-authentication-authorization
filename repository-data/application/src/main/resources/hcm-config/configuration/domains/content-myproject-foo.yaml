@@ -1,0 +1,70 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:domains/content-myproject-foo:
+      jcr:primaryType: hipposys:domain
+      /content-domain:
+        jcr:primaryType: hipposys:domainrule
+        /content-and-descendants:
+          jcr:primaryType: hipposys:facetrule
+          hipposys:equals: true
+          hipposys:facet: jcr:path
+          hipposys:type: Reference
+          hipposys:value: /content/documents/myproject-foo
+      /author:
+        jcr:primaryType: hipposys:authrole
+        hipposys:role: author
+        hipposys:userrole:
+          .meta:category: system
+          type: string
+          value: myproject.foo.author
+        hipposys:users:
+          .meta:category: system
+          .meta:add-new-system-values: true
+          operation: override
+          type: string
+          value: []
+      /editor:
+        jcr:primaryType: hipposys:authrole
+        hipposys:role: editor
+        hipposys:userrole:
+          .meta:category: system
+          type: string
+          value: myproject.foo.editor
+      /assets:
+        jcr:primaryType: hipposys:domainrule
+        /assets-example:
+          jcr:primaryType: hipposys:facetrule
+          hipposys:equals: true
+          hipposys:facet: jcr:path
+          hipposys:filter: false
+          hipposys:type: Reference
+          hipposys:value: /content/assets/myproject-foo
+      /gallery:
+        jcr:primaryType: hipposys:domainrule
+        /gallery-example:
+          jcr:primaryType: hipposys:facetrule
+          hipposys:equals: true
+          hipposys:facet: jcr:path
+          hipposys:filter: false
+          hipposys:type: Reference
+          hipposys:value: /content/gallery/myproject-foo
+      /readonly:
+        jcr:primaryType: hipposys:authrole
+        hipposys:role: readonly
+        hipposys:userrole:
+          .meta:category: system
+          type: string
+          value: myproject.foo.readonly
+        hipposys:users:
+          .meta:category: system
+          .meta:add-new-system-values: true
+          operation: override
+          type: string
+          value: []
+      /admin:
+        jcr:primaryType: hipposys:authrole
+        hipposys:role: admin
+        hipposys:userrole:
+          .meta:category: system
+          type: string
+          value: myproject.foo.admin

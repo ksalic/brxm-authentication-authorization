@@ -21,4 +21,13 @@ definitions:
           jcr:primaryType: hst:catalog
       /myproject:
         jcr:primaryType: hst:configuration
+        hst:inheritsfrom: [../common, ../myproject-common]
+      /myproject-common:
+        jcr:primaryType: hst:configuration
         hst:inheritsfrom: [../common]
+      /myproject-foo:
+        jcr:primaryType: hst:configuration
+        hst:inheritsfrom: [../common, ../myproject-common]
+      /myproject-bar:
+        jcr:primaryType: hst:configuration
+        hst:inheritsfrom: [../common, ../myproject-common]

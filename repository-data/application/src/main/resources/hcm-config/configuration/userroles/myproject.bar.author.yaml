@@ -1,0 +1,7 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:userroles/myproject.bar.author:
+      jcr:primaryType: hipposys:userrole
+      hipposys:description: Author access to myproject bar
+      hipposys:system: true
+      hipposys:userroles: [myproject.bar.readonly]

@@ -1,0 +1,7 @@
+/content/assets/myproject-bar:
+  jcr:primaryType: hippogallery:stdAssetGallery
+  jcr:mixinTypes: ['hippo:named', 'mix:versionable']
+  jcr:uuid: efdfb886-0c1f-4d65-8fd8-048c2d991e27
+  hippo:name: myproject bar
+  hippostd:foldertype: [new-file-folder]
+  hippostd:gallerytype: ['hippogallery:exampleAssetSet']

@@ -1,0 +1,7 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:userroles/myproject.default.admin:
+      jcr:primaryType: hipposys:userrole
+      hipposys:description: Admin access to myproject
+      hipposys:system: true
+      hipposys:userroles: [myproject.default.editor]

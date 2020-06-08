@@ -1,0 +1,7 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:userroles/administration.readonly:
+      jcr:primaryType: hipposys:userrole
+      hipposys:description: ''
+      hipposys:system: true
+      hipposys:userroles: ['']

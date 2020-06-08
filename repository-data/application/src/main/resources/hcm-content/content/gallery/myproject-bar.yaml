@@ -1,0 +1,7 @@
+/content/gallery/myproject-bar:
+  jcr:primaryType: hippogallery:stdImageGallery
+  jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+  jcr:uuid: c4290054-1b1d-489f-87fe-e1adcafbd406
+  hippo:name: My Project Bar
+  hippostd:foldertype: [new-image-folder]
+  hippostd:gallerytype: ['hippogallery:imageset']

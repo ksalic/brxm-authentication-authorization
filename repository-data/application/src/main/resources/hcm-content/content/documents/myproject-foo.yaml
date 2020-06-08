@@ -1,0 +1,9 @@
+/content/documents/myproject-foo:
+  .meta:order-before: myproject-bar
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:referenceable']
+  jcr:uuid: 1c582d9b-75f9-4422-a8f4-dee9e3047dcb
+  hippo:name: My Project Foo
+  hippostd:foldertype: [new-translated-folder, new-document]
+  hippotranslation:id: 2782886d-17b5-497c-8b40-e6c840b5a64d
+  hippotranslation:locale: en
