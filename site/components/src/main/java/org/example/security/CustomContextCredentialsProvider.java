@@ -61,6 +61,9 @@ public class CustomContextCredentialsProvider implements ContextCredentialsProvi
         if (liveuser.isPresent() && credentialsMap.containsKey(liveuser.get().getAuthority())) {
             return credentialsMap.get(liveuser.get().getAuthority());
         }
+        if (user.getAuthorities().stream().filter(grantedAuthority -> grantedAuthority.getAuthority().equals("ROLE_xm.default-user.system-admin")).findAny().isPresent()) {
+            return defaultCredentials;
+        }
         throw new CustomSessionPoolException("not allowed to access the credentials map with group " + user.getUsername());
     }
 
