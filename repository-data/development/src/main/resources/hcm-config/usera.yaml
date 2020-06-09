@@ -1,0 +1,8 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:users/usera:
+      jcr:primaryType: hipposys:user
+      hipposys:active: true
+      hipposys:password: $SHA-256$HIlytXwnqSU=$NqCi2sJoM4qAwQ8136GYueUVA/TSyidpAI3Evn+y/hc=
+      hipposys:securityprovider: internal
+

@@ -9,48 +9,48 @@
                            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.1.xsd
                            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.1.xsd">
 
-<!--  &lt;!&ndash; Defininig SpringSecurityValve &ndash;&gt;-->
-<!--  <bean id="springSecurityValve" class="org.onehippo.forge.security.support.springsecurity.container.SpringSecurityValve">-->
-<!--    <property name="valveName" value="springSecurityValve" />-->
-<!--  </bean>-->
+  <!-- Defininig SpringSecurityValve -->
+  <bean id="springSecurityValve" class="org.onehippo.forge.security.support.springsecurity.container.SpringSecurityValve">
+    <property name="valveName" value="springSecurityValve" />
+  </bean>
 
-<!--  &lt;!&ndash;-->
-<!--    Inserting SpringSecurityValve into the default pipeline.-->
-<!--    You may copy and paste the following block to insert the SpringSecurityValve for more pipelines.-->
-<!--    'DefaultSitePipeline' is for the default website pipeline.-->
-<!--    'JaxrsRestContentPipeline' is for the Content/Context Aware JAX-RS Service pipeline.-->
-<!--    'JaxrsRestPlainPipeline' is for the Plain JAX-RS Service pipeline.-->
-<!--  &ndash;&gt;-->
-<!--  <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">-->
-<!--    <property name="targetObject">-->
-<!--      <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">-->
-<!--        <property name="targetObject" ref="org.hippoecm.hst.core.container.Pipelines" />-->
-<!--        <property name="targetMethod" value="getPipeline" />-->
-<!--        <property name="arguments">-->
-<!--          <list>-->
-<!--            <value>PageModelPipeline</value>-->
-<!--          </list>-->
-<!--        </property>-->
-<!--      </bean>-->
-<!--    </property>-->
-<!--    <property name="targetMethod" value="addInitializationValve" />-->
-<!--    <property name="arguments" ref="springSecurityValve"/>-->
-<!--  </bean>-->
+  <!--
+    Inserting SpringSecurityValve into the default pipeline.
+    You may copy and paste the following block to insert the SpringSecurityValve for more pipelines.
+    'DefaultSitePipeline' is for the default website pipeline.
+    'JaxrsRestContentPipeline' is for the Content/Context Aware JAX-RS Service pipeline.
+    'JaxrsRestPlainPipeline' is for the Plain JAX-RS Service pipeline.
+  -->
+  <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+    <property name="targetObject">
+      <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+        <property name="targetObject" ref="org.hippoecm.hst.core.container.Pipelines" />
+        <property name="targetMethod" value="getPipeline" />
+        <property name="arguments">
+          <list>
+            <value>PageModelPipeline</value>
+          </list>
+        </property>
+      </bean>
+    </property>
+    <property name="targetMethod" value="addInitializationValve" />
+    <property name="arguments" ref="springSecurityValve"/>
+  </bean>
 
-<!--  <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">-->
-<!--    <property name="targetObject">-->
-<!--      <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">-->
-<!--        <property name="targetObject" ref="org.hippoecm.hst.core.container.Pipelines" />-->
-<!--        <property name="targetMethod" value="getPipeline" />-->
-<!--        <property name="arguments">-->
-<!--          <list>-->
-<!--            <value>DefaultSitePipeline</value>-->
-<!--          </list>-->
-<!--        </property>-->
-<!--      </bean>-->
-<!--    </property>-->
-<!--    <property name="targetMethod" value="addInitializationValve" />-->
-<!--    <property name="arguments" ref="springSecurityValve"/>-->
-<!--  </bean>-->
+  <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+    <property name="targetObject">
+      <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+        <property name="targetObject" ref="org.hippoecm.hst.core.container.Pipelines" />
+        <property name="targetMethod" value="getPipeline" />
+        <property name="arguments">
+          <list>
+            <value>DefaultSitePipeline</value>
+          </list>
+        </property>
+      </bean>
+    </property>
+    <property name="targetMethod" value="addInitializationValve" />
+    <property name="arguments" ref="springSecurityValve"/>
+  </bean>
 
 </beans>

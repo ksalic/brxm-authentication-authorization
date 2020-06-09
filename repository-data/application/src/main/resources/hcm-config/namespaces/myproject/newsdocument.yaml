@@ -11,7 +11,7 @@ definitions:
         /hipposysedit:nodetype:
           jcr:primaryType: hipposysedit:nodetype
           jcr:mixinTypes: ['hipposysedit:remodel', 'mix:referenceable']
-          jcr:uuid: 8c15f2e1-bae7-4fac-b680-dcda547791eb
+          jcr:uuid: a84d505c-5294-4349-8585-6216d3170c0a
           hipposysedit:node: true
           hipposysedit:supertype: ['myproject:basedocument', 'hippostd:relaxed', 'hippotranslation:translated']
           hipposysedit:uri: http://www.myproject.com/myproject/nt/1.0
@@ -80,12 +80,20 @@ definitions:
             hipposysedit:path: myproject:location
             hipposysedit:primary: false
             hipposysedit:type: String
+          /auth:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:auth
+            hipposysedit:primary: false
+            hipposysedit:type: StaticDropdown
       /hipposysedit:prototypes:
         jcr:primaryType: hipposysedit:prototypeset
         /hipposysedit:prototype:
           jcr:primaryType: myproject:newsdocument
           jcr:mixinTypes: ['mix:referenceable']
-          jcr:uuid: 6f676dab-5624-4434-9e9e-d6c575a6e29f
+          jcr:uuid: 91058ddd-ca77-4603-a5f2-7aa06b6b11fa
           hippo:related___pathreference: []
           hippostd:holder: holder
           hippostd:state: draft
@@ -99,9 +107,12 @@ definitions:
           myproject:documenttype: news
           myproject:introduction: ''
           myproject:title: ''
+          myproject:author: ''
+          myproject:location: ''
+          myproject:source: ''
           /myproject:content:
             jcr:primaryType: hippostd:html
-            hippostd:content: <html><body></body></html>
+            hippostd:content: ''
           /myproject:image:
             jcr:primaryType: hippogallerypicker:imagelink
             hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
@@ -153,6 +164,16 @@ definitions:
             wicket.id: ${cluster.id}.left.item
             /cluster.options:
               jcr:primaryType: frontend:pluginconfig
+          /auth:
+            jcr:primaryType: frontend:plugin
+            caption: Authorization
+            field: auth
+            hint: ''
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.right.item
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+              selectable.options: A,B
           /date:
             jcr:primaryType: frontend:plugin
             field: date

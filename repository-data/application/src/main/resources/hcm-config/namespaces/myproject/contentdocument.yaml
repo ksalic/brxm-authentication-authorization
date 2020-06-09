@@ -11,7 +11,7 @@ definitions:
         /hipposysedit:nodetype:
           jcr:primaryType: hipposysedit:nodetype
           jcr:mixinTypes: ['hipposysedit:remodel', 'mix:referenceable']
-          jcr:uuid: c2e05c80-f2cb-4549-89b9-4130a8ea5194
+          jcr:uuid: a42e51a5-8c73-4937-93a9-b524d2f48731
           hipposysedit:node: true
           hipposysedit:supertype: ['myproject:basedocument', 'hippostd:relaxed', 'hippotranslation:translated']
           hipposysedit:uri: http://www.myproject.com/myproject/nt/1.0
@@ -47,12 +47,20 @@ definitions:
             hipposysedit:path: myproject:publicationdate
             hipposysedit:primary: false
             hipposysedit:type: Date
+          /auth:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:auth
+            hipposysedit:primary: false
+            hipposysedit:type: StaticDropdown
       /hipposysedit:prototypes:
         jcr:primaryType: hipposysedit:prototypeset
         /hipposysedit:prototype:
           jcr:primaryType: myproject:contentdocument
           jcr:mixinTypes: ['mix:referenceable']
-          jcr:uuid: ae2ff9c7-5a76-4b7d-ad42-abdd1185dda1
+          jcr:uuid: 4042d831-3bbf-47d1-b409-9d5b0e4396ea
           hippo:related___pathreference: []
           hippostd:holder: holder
           hippostd:state: draft
@@ -67,7 +75,7 @@ definitions:
           myproject:title: ''
           /myproject:content:
             jcr:primaryType: hippostd:html
-            hippostd:content: <html><body></body></html>
+            hippostd:content: ''
       /editor:templates:
         jcr:primaryType: editor:templateset
         /_default_:
@@ -113,6 +121,15 @@ definitions:
             wicket.id: ${cluster.id}.left.item
             /cluster.options:
               jcr:primaryType: frontend:pluginconfig
+          /auth:
+            jcr:primaryType: frontend:plugin
+            caption: Authorization
+            field: auth
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.right.item
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+              selectable.options: A,B
           /publicationdate:
             jcr:primaryType: frontend:plugin
             field: publicationdate

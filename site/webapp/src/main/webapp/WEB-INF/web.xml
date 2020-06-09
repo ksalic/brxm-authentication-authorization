@@ -36,13 +36,13 @@
   Configure Spring Web Application Context configuration files.
   You should include your spring security configuration in any file(s) in the following.
 -->
-<!--  <context-param>-->
-<!--    <param-name>contextConfigLocation</param-name>-->
-<!--    <param-value>-->
-<!--      /WEB-INF/applicationContext.xml-->
-<!--&lt;!&ndash;      /WEB-INF/applicationContext-security.xml&ndash;&gt;-->
-<!--    </param-value>-->
-<!--  </context-param>-->
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>
+      /WEB-INF/applicationContext.xml
+      /WEB-INF/applicationContext-security.xml
+    </param-value>
+  </context-param>
 
   <!--
     HST-2 Content Beans Annotation Configuration. You can configure it
@@ -74,10 +74,10 @@
   Configure Spring Security Filter.
   Usually you may just copy and paste the following into your web application descriptor.
 -->
-<!--  <filter>-->
-<!--    <filter-name>springSecurityFilterChain</filter-name>-->
-<!--    <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>-->
-<!--  </filter>-->
+  <filter>
+    <filter-name>springSecurityFilterChain</filter-name>
+    <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+  </filter>
 
   <filter>
     <filter-name>CharacterEncodingFilter</filter-name>
@@ -111,11 +111,11 @@
   Configure Spring Security Filter Mapping.
   Usually you may just copy and paste the following into your web application descriptor.
 -->
-<!--  <filter-mapping>-->
-<!--    <filter-name>springSecurityFilterChain</filter-name>-->
-<!--    <url-pattern>/*</url-pattern>-->
-<!--    <dispatcher>REQUEST</dispatcher>-->
-<!--  </filter-mapping>-->
+  <filter-mapping>
+    <filter-name>springSecurityFilterChain</filter-name>
+    <url-pattern>/*</url-pattern>
+    <dispatcher>REQUEST</dispatcher>
+  </filter-mapping>
 
   <filter-mapping>
     <filter-name>CharacterEncodingFilter</filter-name>

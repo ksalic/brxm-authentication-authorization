@@ -1,0 +1,8 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:userroles/xm.live-documents-a.reader:
+      jcr:primaryType: hipposys:userrole
+      hipposys:description: Allows reading of live (published) documents through role
+        readonly
+      hipposys:system: true
+      hipposys:userroles: [xm.webfiles.reader]
